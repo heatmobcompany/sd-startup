@@ -28,8 +28,8 @@ else
 fi
 
 ### Check validity of "ttl" parameter
-if [ "${ttl}" -lt 120 ] || [ "${ttl}" -gt 7200 ] && [ "${ttl}" -ne 1 ]; then
-  echo "Error! ttl out of range (120-7200) or not set to 1"
+if [ "${ttl}" -lt 60 ] || [ "${ttl}" -gt 7200 ] && [ "${ttl}" -ne 1 ]; then
+  echo "Error! ttl out of range (60-7200) or not set to 1"
   exit
 fi
 
